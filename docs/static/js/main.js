@@ -78,36 +78,31 @@ const commands = {
     },
 
     experience() {
-        window.location.href = "/experience";
+        window.location.href = "/experience/";
     },
 
     projects() {
-        window.location.href = "/projects";
+        window.location.href = "/projects/";
     },
 
     "projects.ingest"() {
-        window.location.href = "/projects#ingest";
+        window.location.href = "/projects/#ingest";
     },
 
     "projects.pipelines"() {
-        window.location.href = "/projects#pipelines";
+        window.location.href = "/projects/#pipelines";
     },
 
     "projects.azure"() {
-        window.location.href = "/projects#azure-infrastructure";
+        window.location.href = "/projects/#azure-infrastructure";
     },
 
     "projects.ai"() {
-        window.location.href = "/projects#ai-ml-rag";
+        window.location.href = "/projects/#ai-ml-rag";
     },
 
     skills() {
-        window.location.href = "/background";
-    },
-
-    contact() {
-        printLine("COMMUNICATIONS CHANNEL", "terminal-amber");
-        printLine("EMAIL: filipshahanski@gmail.com");
+        window.location.href = "/background/";
     },
 
     clear() {
