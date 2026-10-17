@@ -26,3 +26,6 @@ Thumbs.db
 
 # Adhoc
 prompts
+
+# actions
+.github*

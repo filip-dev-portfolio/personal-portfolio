@@ -22,7 +22,7 @@
 
 
     <header class="topbar">
-        <a class="brand" href="/" aria-label="Filip Shahanski home">
+        <a class="brand" href="{{ url_for('home') }}" aria-label="Filip Shahanski home">
             <span class="brand-mark" aria-hidden="true">+</span>
             <span class="brand-name">
                 FILIP <span class="brand-muted">SHAHANSKI</span>
@@ -31,11 +31,11 @@
 
         <nav class="topbar-nav" aria-label="Main navigation">
             <a class="topbar-nav-link active"
-            href="/"
+            href="{{ url_for('home') }}"
             aria-current="page">HOME</a>
-            <a class="topbar-nav-link" href="/experience">EXPERIENCE</a>
-            <a class="topbar-nav-link" href="/projects">PROJECTS</a>
-            <a class="topbar-nav-link" href="/background">BACKGROUND</a>
+            <a class="topbar-nav-link" href="{{ url_for('experience') }}">EXPERIENCE</a>
+            <a class="topbar-nav-link" href="{{ url_for('projects') }}">PROJECTS</a>
+            <a class="topbar-nav-link" href="{{ url_for('background') }}">BACKGROUND</a>
         </nav>
 
         <div class="topbar-status">

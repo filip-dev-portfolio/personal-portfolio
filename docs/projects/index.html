@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10120f">
+    <meta name="description"
+          content="Project archive covering data ingestion, data pipelines, Azure infrastructure, and AI/ML systems.">
+
+    <title>Projects // Filip Shahanski</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="/static/css/style.css">
+    <script src="/static/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a class="brand" href="/" aria-label="Filip Shahanski home">
+            <span class="brand-mark" aria-hidden="true">+</span>
+            <span class="brand-name">
+                FILIP <span class="brand-muted">SHAHANSKI</span>
+            </span>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main navigation">
+            <a class="topbar-nav-link "
+               href="/"
+               >HOME</a>
+
+            <a class="topbar-nav-link "
+               href="/experience/"
+               >EXPERIENCE</a>
+
+            <a class="topbar-nav-link active"
+               href="/projects/"
+               aria-current="page">PROJECTS</a>
+
+            <a class="topbar-nav-link "
+               href="/background/"
+               >BACKGROUND</a>
+        </nav>
+
+        <div class="topbar-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            ALL SYSTEMS NOMINAL
+        </div>
+
+        <a class="topbar-link" href="mailto:filipshahanski@gmail.com">
+            ESTABLISH CONTACT <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main>
+        
+<section class="inner-page projects-page">
+
+    <div class="page-eyebrow">[ 02 — MISSION ARCHIVE ]</div>
+
+    <h1 class="page-title">
+        SYSTEMS THAT<br>
+        <span>DO THE WORK.</span>
+    </h1>
+
+    <p class="page-intro">
+        An archive of engineering projects spanning the full data lifecycle,
+        from ingestion and transformation to cloud infrastructure and applied AI.
+        Select a category to explore the systems.
+    </p>
+
+    <!-- CATEGORY NAVIGATION -->
+    <nav class="project-category-nav" aria-label="Project categories">
+        <a href="#ingest">
+            <span class="category-nav-number">01</span>
+            <span class="category-nav-name">INGEST</span>
+            <span class="category-nav-arrow">↘</span>
+        </a>
+
+        <a href="#pipelines">
+            <span class="category-nav-number">02</span>
+            <span class="category-nav-name">PIPELINES</span>
+            <span class="category-nav-arrow">↘</span>
+        </a>
+
+        <a href="#azure-infrastructure">
+            <span class="category-nav-number">03</span>
+            <span class="category-nav-name">AZURE INFRA</span>
+            <span class="category-nav-arrow">↘</span>
+        </a>
+
+        <a href="#ai-ml-rag">
+            <span class="category-nav-number">04</span>
+            <span class="category-nav-name">AI / ML / RAG</span>
+            <span class="category-nav-arrow">↘</span>
+        </a>
+    </nav>
+
+    <div class="projects-archive-header">
+        <span>PROJECT DATABASE</span>
+        <span>04 CATEGORIES</span>
+        <span>ARCHIVE // 2026</span>
+    </div>
+
+
+    <!-- 01: INGEST -->
+    <section class="project-category" id="ingest">
+
+        <div class="category-heading">
+            <div class="category-heading-main">
+                <span class="category-index">01 / DATA ACQUISITION</span>
+                <h2>INGEST<span>.</span></h2>
+                <p>Sources, APIs, extraction and data acquisition.</p>
+            </div>
+            <span class="category-code">SRC_01</span>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_001</span>
+
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/trading-platform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Trading Research Platform project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+
+                    <span class="project-status">DATA INGESTION</span>
+                </div>
+
+                <div class="project-graphic">
+                    <span>API</span><i>→</i>
+                    <span>EXTRACT</span><i>→</i>
+                    <span>ANALYSE</span><i>→</i>
+                    <span>PLOT</span>
+                </div>
+
+                <h3>Trading Research Platform</h3>
+
+                <p class="project-description">
+                    A data acquisition workflow built around API integrations
+                    and structured source data.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            A modular Python-based trading research and analytics platform that transforms historical market data into actionable insights. 
+                            Integrates automated data ingestion with yfinance, feature engineering, technical indicators (RSI and moving averages), market trend detection, and linear regression forecasting. 
+                            Includes a moving-average crossover backtesting engine to evaluate trading strategies, with performance analysis and a FastAPI REST service for real-time ticker analysis and backtest execution.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Trading Research Platform is building a modular, end-to-end data pipeline that transforms raw financial market data into structured analytics and accessible API outputs.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>PYTHON</span>
+                    <span>OOP</span>
+                    <span>Statistics</span>
+                    <span>Predictive Analytics</span>
+                    <span>Forecasting</span>
+                    <span>FASTAPI</span>
+                    <span>REST APIs</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>DATA ACQUISITION</span>
+                    <span>↗</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- 02: PIPELINES -->
+    <section class="project-category" id="pipelines">
+
+        <div class="category-heading">
+            <div class="category-heading-main">
+                <span class="category-index">02 / DATA TRANSFORMATION</span>
+                <h2>PIPELINES<span>.</span></h2>
+                <p>ETL/ELT, distributed processing and analytics-ready data.</p>
+            </div>
+            <span class="category-code">ETL_02</span>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_002</span>
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/dbx-ingestion-framework"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Sample DBX Medallion Ingestion Framework project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+                    <span class="project-status">DATA ENGINEERING</span>
+                </div>
+
+                <div class="project-graphic">
+                    <span>BRONZE</span><i>→</i>
+                    <span>SILVER</span><i>→</i>
+                    <span>GOLD</span>
+                </div>
+
+                <h3>Databricks Medallion Ingestion Framework</h3>
+
+                <p class="project-description">
+                    A data platform covering ingestion, transformation,
+                    data quality and analytics-ready outputs.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            The platform architecture can document raw data
+                            ingestion, staged transformations, curated datasets
+                            and the delivery of trusted data to analytical consumers.
+                            It includes a full framework for medallion architecture ingestion, with logging, error handling, data quality checks and transformation logic.
+                            Additionally, it contains objects deployment process.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Medallion architecture, transformation logic and data quality.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>PYTHON</span>
+                    <span>SPARK</span>
+                    <span>SQL</span>
+                    <span>DATABRICKS</span>
+                    <span>AZURE</span>
+                    <span>CLUSTER MANAGEMENT</span>
+                    <span>DATA PIPELINES</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>DATA TRANSFORMATION</span>
+                    <span>↗</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- 03: AZURE INFRASTRUCTURE -->
+    <section class="project-category" id="azure-infrastructure">
+
+        <div class="category-heading">
+            <div class="category-heading-main">
+                <span class="category-index">03 / CLOUD SYSTEMS</span>
+                <h2>AZURE INFRA<span>.</span></h2>
+                <p>Infrastructure as code, automation and cloud deployment.</p>
+            </div>
+            <span class="category-code">INF_03</span>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_003</span>
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/databricks-IaC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Databricks Infrastructure Terraform project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+                    <span class="project-status">INFRASTRUCTURE</span>
+                </div>
+
+                <div class="project-graphic">
+                    <span>INIT</span><i>→</i>
+                    <span>PLAN</span><i>→</i>
+                    <span>APPLY</span>
+                </div>
+
+                <h3>Azure Databricks Infrastructure as Code</h3>
+
+                <p class="project-description">
+                    A reproducible infrastructure workflow for managing
+                    Azure Databricks resources in a secure virtual environment.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            A modular Terraform-based infrastructure project for deploying and managing an Azure Data Platform integrated with Azure Databricks. 
+                            Implements reusable Terraform modules and environment-specific JSON varsets to separate infrastructure logic from configuration and support scalable environment management. 
+                            Provisions core Azure resources, including virtual networks, subnets, private endpoints, Key Vault, managed identities, storage, and Databricks workspace components. 
+                            Emphasizes secure infrastructure design through private networking, customer-managed encryption keys, RBAC, and remote Terraform state management. 
+                            Focuses on infrastructure as code, configuration-driven deployments, resource modularity, and maintainable cloud infrastructure.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Infrastructure automation, consistency and maintainability.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>TERRAFORM</span>
+                    <span>AZURE</span>
+                    <span>VNET</span>
+                    <span>DATABRICKS</span>
+                    <span>INFRASTRUCTURE</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>CLOUD INFRASTRUCTURE</span>
+                    <span>↗</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_004</span>
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/file-ingestion-IaC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Logic Apps Infrastructure Terraform project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+                    <span class="project-status">INFRASTRUCTURE</span>
+                </div>
+
+                <div class="project-graphic">
+                    <span>INIT</span><i>→</i>
+                    <span>PLAN</span><i>→</i>
+                    <span>APPLY</span>
+                </div>
+
+                <h3>Azure Logic Apps Infrastructure as Code</h3>
+
+                <p class="project-description">
+                    A reproducible infrastructure workflow for managing
+                    Azure Logic Apps resources in a secure virtual environment.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            A Terraform-based Infrastructure as Code project for deploying a secure, serverless data ingestion platform on Microsoft Azure. 
+                            Uses Azure Logic Apps Standard to automate file ingestion from external sources, such as Outlook email attachments, into a dedicated landing storage account for downstream processing. 
+                            Implements modular cloud infrastructure with virtual networks, segmented subnets, private endpoints, private DNS zones, and Azure Key Vault to support secure service connectivity. 
+                            Leverages user-assigned managed identities and Azure RBAC for secretless authentication and least-privilege access control. 
+                            Focuses on secure serverless automation, private networking, identity-driven security, and repeatable infrastructure provisioning using Terraform.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Infrastructure automation, consistency and maintainability.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>TERRAFORM</span>
+                    <span>AZURE</span>
+                    <span>VNET</span>
+                    <span>LOGICAPPS</span>
+                    <span>INFRASTRUCTURE</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>CLOUD INFRASTRUCTURE</span>
+                    <span>↗</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- 04: AI / ML / RAG -->
+    <section class="project-category" id="ai-ml-rag">
+
+        <div class="category-heading">
+            <div class="category-heading-main">
+                <span class="category-index">04 / APPLIED INTELLIGENCE</span>
+                <h2>AI / ML / RAG<span>.</span></h2>
+                <p>Language models, document retrieval and AI applications.</p>
+            </div>
+            <span class="category-code">AI_04</span>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_005</span>
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/cv-analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View CV Comparison project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+                    <span class="project-status project-status-ai">AI / R&amp;D</span>
+                </div>
+
+                <div class="project-graphic project-graphic-ai">
+                    <span>DOCS</span><i>→</i>
+                    <span>PYTHON</span><i>→</i>
+                    <span>LLM</span>
+                </div>
+
+                <h3>CV / Job Description Analysis LLM</h3>
+
+                <p class="project-description">
+                    A document-focused AI application concept combining
+                    retrieval, contextual search and language models.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            A Python-based application that uses Ollama and the Qwen3 8B language model to compare CVs against job descriptions and generate AI-powered matching results. 
+                            The application runs locally through Docker, eliminating the need for a hosted AI API and keeping document processing on the user's machine. 
+                            It supports PDF, DOCX, TXT, and Markdown files, with dedicated modules for document parsing, prompt engineering, model integration, and matching logic. 
+                            A modular architecture separates configuration, inference, and processing, while storing CVs, job descriptions, and results in local directories. 
+                            The project focuses on local LLM integration, containerization, document processing pipelines, and privacy-conscious AI application design.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Retrieval quality, grounded responses and LLM integration.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>PYTHON</span>
+                    <span>OLLAMA</span>
+                    <span>QWEN3</span>
+                    <span>DOCKER</span>
+                    <span>LLMs</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>AI SYSTEMS</span>
+                    <span>↗</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-topline">
+                    <span>PROJECT_006</span>
+                    <a
+                        class="project-github-link"
+                        href="https://github.com/filip-dev-portfolio/textbook-pdf-tutor"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View PDF Tutor project on GitHub"
+                    >
+                        VIEW FULL PROJECT GITHUB ↗
+                    </a>
+                    <span class="project-status project-status-ai">AI APPLICATION</span>
+                </div>
+
+                <div class="project-graphic project-graphic-ai">
+                    <span>PDF</span><i>→</i>
+                    <span>QUERY</span><i>→</i>
+                    <span>ANSWER</span>
+                </div>
+
+                <h3>PDF Tutor</h3>
+
+                <p class="project-description">
+                    A document-based learning assistant designed around
+                    asking questions about PDF content.
+                </p>
+
+                <details class="project-details">
+                    <summary>
+                        <span>EXPAND DETAILS</span>
+                        <span class="expand-icon">+</span>
+                    </summary>
+                    <div class="project-details-content">
+                        <p>
+                            A Python-based application that implements a Retrieval-Augmented Generation (RAG) pipeline to answer questions about PDF textbooks using locally running language models. 
+                            It extracts and cleans textbook content with PyMuPDF, generates semantic embeddings using Sentence Transformers, and retrieves relevant passages through FAISS vector search. 
+                            Retrieved context is passed to Qwen3 8B via Ollama to generate grounded answers with source-page references, helping users verify responses against the original material. 
+                            Built with Streamlit and persistent local storage, the application combines document ingestion, semantic search, and LLM inference into a modular, interactive learning tool. 
+                            The engineering focus is on RAG pipeline design, embedding-based retrieval, context construction, local inference, and systematic evaluation of retrieval quality and answer accuracy.
+                        </p>
+                        <div class="detail-label">ENGINEERING FOCUS</div>
+                        <p>Document processing, contextual question answering and usability.</p>
+                    </div>
+                </details>
+
+                <div class="tag-list">
+                    <span>PYTHON</span>
+                    <span>PDF</span>
+                    <span>LLMS</span>
+                    <span>RAG</span>
+                    <span>OLLAMA</span>
+                    <span>QWEN3</span>
+                    <span>FAISS</span>
+                    <span>NUMPY</span>
+                    <span>VECTOR DATABASE</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span>APPLIED AI</span>
+                    <span>↗</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <div class="projects-end">
+        <span class="section-index">[ END OF ARCHIVE ]</span>
+        <a class="page-cta" href="/background/">
+            VIEW TECHNICAL BACKGROUND <span>↗</span>
+        </a>
+    </div>
+
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 FILIP SHAHANSKI</span>
+        <span>DATA SYSTEMS / ENGINEERING / AI</span>
+        <a href="mailto:filipshahanski@gmail.com">GET IN TOUCH ↗</a>
+    </footer>
+</body>
+</html>

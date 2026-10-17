@@ -24,7 +24,7 @@
     <div class="scanlines" aria-hidden="true"></div>
 
     <header class="topbar">
-        <a class="brand" href="/" aria-label="Filip Shahanski home">
+        <a class="brand" href="{{ url_for('home') }}" aria-label="Filip Shahanski home">
             <span class="brand-mark" aria-hidden="true">+</span>
             <span class="brand-name">
                 FILIP <span class="brand-muted">SHAHANSKI</span>
@@ -33,19 +33,19 @@
 
         <nav class="topbar-nav" aria-label="Main navigation">
             <a class="topbar-nav-link {% if active_page == 'home' %}active{% endif %}"
-               href="/"
+               href="{{ url_for('home') }}"
                {% if active_page == 'home' %}aria-current="page"{% endif %}>HOME</a>
 
             <a class="topbar-nav-link {% if active_page == 'experience' %}active{% endif %}"
-               href="/experience"
+               href="{{ url_for('experience') }}"
                {% if active_page == 'experience' %}aria-current="page"{% endif %}>EXPERIENCE</a>
 
             <a class="topbar-nav-link {% if active_page == 'projects' %}active{% endif %}"
-               href="/projects"
+               href="{{ url_for('projects') }}"
                {% if active_page == 'projects' %}aria-current="page"{% endif %}>PROJECTS</a>
 
             <a class="topbar-nav-link {% if active_page == 'background' %}active{% endif %}"
-               href="/background"
+               href="{{ url_for('background') }}"
                {% if active_page == 'background' %}aria-current="page"{% endif %}>BACKGROUND</a>
         </nav>
 
