@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10120f">
+    <meta name="description"
+          content="{% block description %}Filip Shahanski — Data Engineering & AI{% endblock %}">
+
+    <title>{% block title %}Filip Shahanski // Engineering Portfolio{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', path='/css/style.css') }}">
+    <script src="{{ url_for('static', path='/js/main.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a class="brand" href="/" aria-label="Filip Shahanski home">
+            <span class="brand-mark" aria-hidden="true">+</span>
+            <span class="brand-name">
+                FILIP <span class="brand-muted">SHAHANSKI</span>
+            </span>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main navigation">
+            <a class="topbar-nav-link {% if active_page == 'home' %}active{% endif %}"
+               href="/"
+               {% if active_page == 'home' %}aria-current="page"{% endif %}>HOME</a>
+
+            <a class="topbar-nav-link {% if active_page == 'experience' %}active{% endif %}"
+               href="/experience"
+               {% if active_page == 'experience' %}aria-current="page"{% endif %}>EXPERIENCE</a>
+
+            <a class="topbar-nav-link {% if active_page == 'projects' %}active{% endif %}"
+               href="/projects"
+               {% if active_page == 'projects' %}aria-current="page"{% endif %}>PROJECTS</a>
+
+            <a class="topbar-nav-link {% if active_page == 'background' %}active{% endif %}"
+               href="/background"
+               {% if active_page == 'background' %}aria-current="page"{% endif %}>BACKGROUND</a>
+        </nav>
+
+        <div class="topbar-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            ALL SYSTEMS NOMINAL
+        </div>
+
+        <a class="topbar-link" href="mailto:filipshahanski@gmail.com">
+            ESTABLISH CONTACT <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 FILIP SHAHANSKI</span>
+        <span>DATA SYSTEMS / ENGINEERING / AI</span>
+        <a href="mailto:filipshahanski@gmail.com">GET IN TOUCH ↗</a>
+    </footer>
+</body>
+</html>

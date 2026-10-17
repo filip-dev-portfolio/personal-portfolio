@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10120f">
+    <meta name="description" content="Filip Shahanski — portfolio focused on data engineering, data systems, cloud pipelines, and AI.">
+
+    <title>Filip Shahanski // Data Engineering & AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <script src="{{ url_for('static', path='/js/main.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="scanlines" aria-hidden="true"></div>
+
+
+    <header class="topbar">
+        <a class="brand" href="/" aria-label="Filip Shahanski home">
+            <span class="brand-mark" aria-hidden="true">+</span>
+            <span class="brand-name">
+                FILIP <span class="brand-muted">SHAHANSKI</span>
+            </span>
+        </a>
+
+        <nav class="topbar-nav" aria-label="Main navigation">
+            <a class="topbar-nav-link active"
+            href="/"
+            aria-current="page">HOME</a>
+            <a class="topbar-nav-link" href="/experience">EXPERIENCE</a>
+            <a class="topbar-nav-link" href="/projects">PROJECTS</a>
+            <a class="topbar-nav-link" href="/background">BACKGROUND</a>
+        </nav>
+
+        <div class="topbar-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            ALL SYSTEMS NOMINAL
+        </div>
+
+        <a class="topbar-link" href="mailto:filipshahanski@gmail.com">
+            ESTABLISH CONTACT <span aria-hidden="true">↗</span>
+        </a>
+    </header>
+
+
+    <main class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <section class="hero-content">
+            <div class="eyebrow">
+                <span class="eyebrow-line" aria-hidden="true"></span>
+                <span>FILIP SHAHANSKI</span>
+                <span class="eyebrow-version">/ DATA ENGINEERING &amp; AI</span>
+            </div>
+
+            <h1>
+                DATA INTO<br>
+                <span class="title-outline">USEFUL</span><br>
+                <span class="title-accent">INTELLIGENCE.</span>
+            </h1>
+
+            <p class="hero-description">
+                I build cloud data platforms, ETL/ELT pipelines, and AI-enabled
+                systems that turn complex data into reliable, usable
+                intelligence.
+            </p>
+
+            <div class="hero-actions">
+                <button class="primary-button" id="initialize-btn">
+                    <span class="button-icon">▶</span>
+                    INITIALIZE SYSTEM
+                    <span class="button-arrow">↗</span>
+                </button>
+
+                <a class="secondary-button" href="#about">
+                    <span aria-hidden="true">↓</span> EXPLORE OPERATOR INFO
+                </a>
+            </div>
+
+            <div class="hero-meta">
+                <span><span class="meta-label">FOCUS</span> DATA ENGINEERING</span>
+                <span><span class="meta-label">PLATFORM</span> AZURE / DATABRICKS / SNOWFLAKE</span>
+                <span><span class="meta-label">DATA</span> SQL / PYTHON / SPARK</span>
+            </div>
+        </section>
+
+
+        <aside class="system-panel" id="system-info">
+            <div class="panel-heading">
+                <span>PROJECT CATEGORIES</span>
+                <span class="panel-live">● SIMULATION</span>
+            </div>
+
+
+            <div class="monitor-graphic pipeline-visual">
+                <div class="pipeline-radar">
+                    <div class="pipeline-radar-ring radar-ring-outer"></div>
+                    <div class="pipeline-radar-ring radar-ring-inner"></div>
+                    <div class="pipeline-radar-crosshair"></div>
+                </div>
+                <div class="pipeline-track">
+
+                    <a class="pipeline-stage" href="/projects#ingest">
+                        <span class="pipeline-node">01</span>
+                        <span class="pipeline-copy">
+                            <span class="pipeline-name">INGEST</span>
+                            <span class="pipeline-detail">PYTHON / FASTAPI / APIS</span>
+                        </span>
+                        <span class="pipeline-tag">SOURCE</span>
+                    </a>
+
+                    <a class="pipeline-stage" href="/projects#pipelines">
+                        <span class="pipeline-node">02</span>
+                        <span class="pipeline-copy">
+                            <span class="pipeline-name">PIPELINES</span>
+                            <span class="pipeline-detail">DATABRICKS / MEDALLION</span>
+                        </span>
+                        <span class="pipeline-tag">ETL</span>
+                    </a>
+
+                    <a class="pipeline-stage" href="/projects#azure-infrastructure">
+                        <span class="pipeline-node">03</span>
+                        <span class="pipeline-copy">
+                            <span class="pipeline-name">AZURE INFRA</span>
+                            <span class="pipeline-detail">TERRAFORM / LOGIC APPS</span>
+                        </span>
+                        <span class="pipeline-tag">CLOUD</span>
+                    </a>
+
+                    <a class="pipeline-stage" href="/projects#ai-ml-rag">
+                        <span class="pipeline-node pipeline-node-ai">04</span>
+                        <span class="pipeline-copy">
+                            <span class="pipeline-name">AI / ML / RAG</span>
+                            <span class="pipeline-detail">LLMS / PDF TUTOR / RAG</span>
+                        </span>
+                        <span class="pipeline-tag pipeline-tag-ai">AI</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="system-row">
+                <span>01 / PYTHON APPS</span>
+                <span class="row-state">DATA</span>
+            </div>
+            <div class="system-row">
+                <span>02 / DATA PIPELINES  &amp; DEPLOYMENT CONFIGURATION</span>
+                <span class="row-state">ETL</span>
+            </div>
+            <div class="system-row">
+                <span>03 / AZURE INFRASTRUCTURE; TERRAFORM</span>
+                <span class="row-state">CLOUD</span>
+            </div>
+            <div class="system-row">
+                <span>04 / RAG APPLICATIONS, LLM INTEGRATION</span>
+                <span class="row-state">R&amp;D</span>
+            </div>
+
+            <div class="panel-footer">
+                <span>PIPELINE_MODEL: SIMULATED</span>
+                <span class="pipeline-indicator">● ● ● ●</span>
+            </div>
+        </aside>
+
+
+        <div class="hero-coordinate" aria-hidden="true">
+            ENGINEERING DIVISION / INDEPENDENT OPERATOR
+        </div>
+
+        <div class="hero-bottom" aria-hidden="true">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="bottom-line"></span>
+            <span>51°30' N / YOUR LOCATION HERE</span>
+        </div>
+    </main>
+
+    <section class="next-section" id="about">
+        <div class="about-heading">
+            <span class="section-index">[ 01 — OPERATOR PROFILE ]</span>
+
+            <h2>
+                NOT JUST CODE.<br>
+                <span>BUILT WITH INTENT.</span>
+            </h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I'm Filip Shahanski, a Senior Data Engineer with 9+ years
+                of experience spanning data engineering, analytics, and
+                financial modelling. My work focuses on building reliable
+                data platforms, scalable pipelines, and cloud infrastructure
+                that turn complex data into something useful.
+            </p>
+
+            <p>
+                From enterprise-scale data systems to locally hosted AI
+                applications, I enjoy working across the stack — from
+                ingestion and transformation to infrastructure, analytics,
+                and inference. I work with Python, SQL, Spark, Azure,
+                Databricks, and Terraform, alongside hands-on experimentation
+                with RAG and large language models.
+            </p>
+
+            <p>
+                This portfolio showcases the systems I build, the problems
+                I solve, and the technologies I work with. Explore the
+                pipeline monitor to discover my projects, browse my
+                professional experience and technical background, or
+                initialize the terminal for an alternative, command-driven
+                way to explore the site.
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span>© 2026 FILIP SHAHANSKI</span>
+        <span>DATA SYSTEMS / ENGINEERING / AI</span>
+        <a href="mailto:filipshahanski@gmail.com">GET IN TOUCH ↗</a>
+    </footer>
+
+    <!-- Interactive terminal -->
+    <section class="terminal-overlay" id="terminal" hidden
+             role="dialog" aria-modal="true" aria-labelledby="terminal-title">
+        <div class="terminal-window">
+            <div class="terminal-titlebar">
+                <span id="terminal-title">OPERATOR TERMINAL // ROOT ACCESS</span>
+                <button id="close-terminal" class="terminal-close"
+                        aria-label="Close terminal">×</button>
+            </div>
+
+            <div class="terminal-body" id="terminal-output" aria-live="polite">
+                <p class="terminal-muted">OPERATOR OS [Version 1.0.0]</p>
+                <p>Engineering interface initialized.</p>
+                <p>Type <span class="terminal-green">help</span> to list commands.</p>
+            </div>
+
+            <form id="terminal-form" class="terminal-input-row">
+                <label for="terminal-input">guest@operator:~$</label>
+                <input id="terminal-input" type="text"
+                       autocomplete="off" spellcheck="false"
+                       placeholder="enter command..." autofocus>
+            </form>
+
+            <div class="terminal-hint">
+                TRY: help / about / projects / contact / clear / exit
+            </div>
+        </div>
+    </section>
+</body>
+</html>
