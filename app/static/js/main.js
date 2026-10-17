@@ -74,35 +74,35 @@ const commands = {
 
     about() {
         closeTerminal();
-        window.location.href = "/#about";
+        window.location.href = "/personal-portfolio/#about";
     },
 
     experience() {
-        window.location.href = "/experience/";
+        window.location.href = "/personal-portfolio/experience/";
     },
 
     projects() {
-        window.location.href = "/projects/";
+        window.location.href = "/personal-portfolio/projects/";
     },
 
     "projects.ingest"() {
-        window.location.href = "/projects/#ingest";
+        window.location.href = "/personal-portfolio/projects/#ingest";
     },
 
     "projects.pipelines"() {
-        window.location.href = "/projects/#pipelines";
+        window.location.href = "/personal-portfolio/projects/#pipelines";
     },
 
     "projects.azure"() {
-        window.location.href = "/projects/#azure-infrastructure";
+        window.location.href = "/personal-portfolio/projects/#azure-infrastructure";
     },
 
     "projects.ai"() {
-        window.location.href = "/projects/#ai-ml-rag";
+        window.location.href = "/personal-portfolio/projects/#ai-ml-rag";
     },
 
     skills() {
-        window.location.href = "/background/";
+        window.location.href = "/personal-portfolio/background/";
     },
 
     clear() {
