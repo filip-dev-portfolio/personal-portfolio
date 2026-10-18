@@ -12,9 +12,8 @@ OUTPUT_DIR = ROOT / "docs"
 
 # "/" for a custom domain; "/repository-name/" for a
 # GitHub Pages project site.
-SITE_BASE = "/" + os.environ.get(
-    "SITE_BASE", "personal-portfolio"
-).strip("/") + "/"
+SITE_BASE = "/" + os.environ.get("SITE_BASE", "").strip("/") + "/"
+
 
 if SITE_BASE == "//":
     SITE_BASE = "/"
