@@ -104,6 +104,11 @@ const commands = {
     skills() {
         window.location.href = "/background/";
     },
+    
+    contact() {
+        printLine("COMMUNICATIONS CHANNEL", "terminal-amber");
+        printLine("EMAIL: filipshahanski@gmail.com");
+    },
 
     clear() {
         if (terminalOutput) {
