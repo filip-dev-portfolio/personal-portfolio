@@ -3699,3 +3699,59 @@ button:focus-visible .binary-hover-cell,
         height: 5px;
     }
 }
+#about .about-heading .about-portrait {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    position: static;
+    width: 160px;
+    height: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid rgba(153, 255, 102, 0.4);
+    background: #10120f;
+    /* filter: grayscale(100%) contrast(1.05); */
+    transition: filter 0.3s ease;
+}
+
+.about-title-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-title-row .about-portrait {
+    width: 110px;
+    height: 138px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid rgba(153, 255, 102, 0.4);
+    /* filter: grayscale(100%); */
+}
+
+.about-title-row h2 {
+    margin: 0;
+}
+
+#about .section-index {
+    display: block;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+    .about-title-row {
+        gap: 14px;
+    }
+
+    .about-title-row .about-portrait {
+        width: 75px;
+        height: 95px;
+    }
+}
