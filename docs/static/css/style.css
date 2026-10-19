@@ -3018,7 +3018,6 @@ button:focus-visible .binary-hover-cell,
     font-size: 12px;
     line-height: 2;
 }
-
 /* =========================================================
    SECTION HEADERS
    ========================================================= */
@@ -3666,6 +3665,9 @@ button:focus-visible .binary-hover-cell,
     .background-page .tag-list span {
         font-size: 8px;
     }
+}
+.background-page {
+    padding: 90px 9% 110px;
 }
 .project-github-link {
     display: inline-flex;
