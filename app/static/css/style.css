@@ -199,13 +199,50 @@ input:focus-visible {
     display: inline-block;
     width: 7px;
     height: 7px;
-    margin-right: 7px;
+    margin-right: 0;
+    flex-shrink: 0;
 
     border-radius: 50%;
     background: var(--green);
     box-shadow: 0 0 10px #b6d87955;
 }
+/* CV download button in the top navigation */
+.cv-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    white-space: nowrap;
+}
 
+.cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    text-decoration: none;
+
+    transition: color 180ms ease;
+}
+
+.cv-download:hover {
+    color: var(--text);
+}
+
+.cv-download:focus-visible {
+    outline: 1px solid var(--green);
+    outline-offset: 4px;
+}
+
+.cv-status .status-dot {
+    flex-shrink: 0;
+}
 /* Contact action */
 
 .topbar-link {
@@ -395,10 +432,11 @@ h1 {
 }
 
 .hero-description {
-    max-width: 430px;
+    max-width: 600px;
     color: #a9ad9e;
     font-size: 12px;
     line-height: 2;
+    text-align: justify;
 }
 
 .hero-actions {
@@ -1500,6 +1538,7 @@ button:focus-visible .binary-hover-cell,
 .about-content {
     max-width: 440px;
     justify-self: end;
+    text-align: justify;
 }
 
 .about-content p {
@@ -1584,6 +1623,7 @@ button:focus-visible .binary-hover-cell,
     color: #a9ad9e;
     font-size: 12px;
     line-height: 2;
+    text-align: justify;
 }
 
 .record-heading {
@@ -2945,7 +2985,7 @@ button:focus-visible .binary-hover-cell,
 }
 
 .background-page .page-eyebrow::before {
-    content: "";
+    content: none;
     width: 24px;
     height: 1px;
     flex: 0 0 24px;

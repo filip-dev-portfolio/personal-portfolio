@@ -49,9 +49,16 @@
                {% if active_page == 'background' %}aria-current="page"{% endif %}>BACKGROUND</a>
         </nav>
 
-        <div class="topbar-status">
+        <div class="topbar-status cv-status">
             <span class="status-dot" aria-hidden="true"></span>
-            ALL SYSTEMS NOMINAL
+
+            <a class="cv-download"
+            href="{{ url_for('static', path='/files/Filip_Shahanski_CV.pdf') }}"
+            download>
+                DOWNLOAD CV <span aria-hidden="true">↓</span>
+            </a>
+
+            <span class="status-dot" aria-hidden="true"></span>
         </div>
 
         <a class="topbar-link" href="mailto:filipshahanski@gmail.com">
